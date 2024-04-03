@@ -1,4 +1,4 @@
-# Laravel 8 設定 ETag 回應標頭和處理 HTTP 條件式請求
+# Laravel 10 設定 ETag 回應標頭和處理 HTTP 條件式請求
 
 引入 werk365 的 etagconditionals 套件來擴增設定 ETag 回應標頭和處理 HTTP 條件式請求，針對資源發出起始要求且針對資源啟用快取時，伺服器會產生資源回應的 ETag 值，Cache-control 標示為 private 以確保僅現行使用者可以重複使用快取的內容，no-cache 表示要求伺服器檔案時必須以 ETag 確認是否有更新檔案，若無更新，伺服器不需回應檔案。
 
@@ -22,5 +22,5 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/6CYvrKi.png)
+![](https://i.imgur.com/38XdBae.png)
 > ETag 是 HTTP 提供的快取機制，可以讓伺服器利用簡單的字串比對，來驗證客戶端先前快取到的 HTTP 回應是否依然有效
